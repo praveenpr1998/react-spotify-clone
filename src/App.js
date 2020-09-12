@@ -10,7 +10,7 @@ const spotify=new SpotifyWebApi();
 
 function App() {
 
-  const [{user,token,playlistid},dispatch]=useDataLayerValue();
+  const [{token,playlistid},dispatch]=useDataLayerValue();
 
   useEffect(()=>{
     const hash= getTokenFromUrl();
@@ -60,7 +60,7 @@ function App() {
       spotify: spotify,
     });
     }
-  },[token,playlistid]);
+  },[token,playlistid,dispatch]);
 
     return (
     <div className="app">
