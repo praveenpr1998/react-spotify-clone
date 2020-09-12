@@ -4,7 +4,7 @@ import {  useDataLayerValue} from './DataLayer';
 
 function SidebarOptions({option,Icon,id,spotify}) {
 
-    const [{ discover_weekly ,playlistid}, dispatch] = useDataLayerValue();
+    const [{ playlistid}, dispatch] = useDataLayerValue();
 
     const setPlaylist=()=>{
         console.log('idd',id);
@@ -24,7 +24,7 @@ function SidebarOptions({option,Icon,id,spotify}) {
     };
 
     return (
-        <div className="sidebarOption" onClick={(option!='New Playlist')?setPlaylist:null}>
+        <div className="sidebarOption" onClick={(option!=='New Playlist')?setPlaylist:null}>
             {Icon && <Icon className="sidebarOption__icon" />}
             {Icon?<h4>{option}</h4>:<p>{option}</p>}
         </div>
