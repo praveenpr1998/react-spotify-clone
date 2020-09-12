@@ -16,7 +16,11 @@ function App() {
     const hash= getTokenFromUrl();
     window.location.hash="";
     const _token=hash.access_token;
+    
 
+
+var url = window.location.toString();
+window.location.href = url.replace('http://localhost:3000/', 'https://reactspotifyclonee.netlify.app/');
     if(_token){
       dispatch({
         type:'SET_TOKEN',
