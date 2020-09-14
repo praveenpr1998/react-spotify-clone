@@ -1,0 +1,35 @@
+.sidebar{
+   
+    height: 100vh;
+    flex:0.2;
+    background-color: black;
+    color:white;
+    height: 100vh;
+    min-width: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media screen and (max-width: 400px) {
+.sidebar{
+    min-width: 160px;
+    font-size: 11px;
+}
+.sidebar__logo{
+    width: 150px;
+}
+}
+.sidebar__logo{
+height: 70px;
+padding:10px;
+margin-right: auto;
+}
+.sidebar__option{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+.sidebar > hr{
+    border:1px solid #282822;
+    width: 90%;
+    margin: 10px auto;
+}
