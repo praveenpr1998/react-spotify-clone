@@ -19,7 +19,7 @@ function App() {
     
 
 
-var url = window.location.toString();
+
 
     if(_token){
       dispatch({
