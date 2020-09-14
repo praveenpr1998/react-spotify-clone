@@ -20,7 +20,7 @@ function App() {
 
 
 var url = window.location.toString();
-window.location.href = url.replace('http://localhost:3000/', 'https://reactspotifyclonee.netlify.app/');
+
     if(_token){
       dispatch({
         type:'SET_TOKEN',
